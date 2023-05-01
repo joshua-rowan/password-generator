@@ -15,6 +15,7 @@ function generatePassword() {
     
   //Pseudocode below from Paul Keldsen Web Development on YouTube
   //1. Prompt user for the password criteria DONE
+  var passwordLength = passwordLength();
   //2. Password length 8<=i<=128
   //3. Lowercase, uppercase, numbers, special characters
   //4. Validate the input
