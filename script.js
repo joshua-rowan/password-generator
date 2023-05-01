@@ -1,16 +1,15 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var enter;
 
 function generatePassword() {
   console.log("Hey, you clicked the button!")
   //tried several sollutions. This one functioned. https://github.com/jamierachael/Password-Generator/blob/master/script.js helped me write password length prompt. Still needs to loop until resolved.
-  var enter = parseInt(prompt("Password Length. Must be no less than 8 and no more than 128 characters long."));
-    if(!enter) {
+  var characterLength = parseInt(prompt("Password Length. Must be no less than 8 and no more than 128 characters long."));
+    if(!characterLength) {
       alert("This needs a value")
     }
-    else if (enter < 8 || enter > 128) {
-      enter = parseInt(prompt("Password must be between 8 and 128 characters long."))
+    else if (characterLength < 8 || characterLength > 128) {
+      characterLength = parseInt(prompt("Password must be between 8 and 128 characters long."))
 
     
   //Pseudocode below from Paul Keldsen Web Development on YouTube
