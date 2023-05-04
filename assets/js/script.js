@@ -28,6 +28,7 @@ function characterLength() {
 var thePassword = "";
 
 function userCharacters() {
+  var userArray = [];
   var hasLowerCase = confirm("Please confirm or cancel lowercase letters.");
   var hasUpperCase = confirm("Please confirm or cancel uppercase letters.");
   var hasNumbers = confirm("Please confirm or cancel numbers")
