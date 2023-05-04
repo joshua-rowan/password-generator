@@ -5,12 +5,14 @@
 //Tutoring from Dominique Meeks Gombe
 var generateBtn = document.querySelector("#generate");
 
+//provides the password character options
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var symbols = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "+", "?", "/", "-", ":", ";", "[", "]", "{", "}", ".", "<", ">", "=", "_", "`", "|", "~"];
 var userArray = [];
 
+//this gives user the choice of password length, and ensures that password will not be created unless it is =<8 or =>128
 function characterLength() {
   var wordLength = parseInt(prompt("Password Length. Must be no less than 8 and no more than 128 characters long."));
   if (isNaN(wordLength)) {
@@ -25,9 +27,12 @@ function characterLength() {
 
   return wordLength;
 }
+//ensures the password is clear and not holding any previous session's data
 var thePassword = "";
 
+//gives user the choice of which characters to use. Ensures that the password includes at least one of each chosen character
 function userCharacters() {
+  //clears any previous selected characters choices
   var userArray = [];
   var hasLowerCase = confirm("Please confirm or cancel lowercase letters.");
   var hasUpperCase = confirm("Please confirm or cancel uppercase letters.");
@@ -61,6 +66,7 @@ function userCharacters() {
   return userArray;
 }
 
+//calls the characterLength and userCharacters functions to take user choices and create a random password
 function generatePassword() {
   console.log("Hey, you clicked the button!")
   var passwordLength = characterLength();
