@@ -9,6 +9,7 @@ https://joshua-rowan.github.io/password-generator/
 
 ## Screenshot
 
+![joshua-rowan github io_password-generator_ (1)](https://user-images.githubusercontent.com/127271690/236286128-7f0b5511-7345-41b0-8f49-8331be520672.png)
 
 ## Scenario
 
